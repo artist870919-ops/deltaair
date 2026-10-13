@@ -167,9 +167,13 @@
     .delta_desc {
         margin-top: 20px;
     }
+    ul.footer_sns {
+        flex-wrap: wrap;
+    }
     ul.footer_sns li {
         flex: none;
     }
+
     ul.footer_sns li:nth-child(1) {
         width: 100%;
         border: 0;
