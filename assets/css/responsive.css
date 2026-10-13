@@ -25,6 +25,9 @@
 }
 
 @media (max-width: 960px) {
+    #mNav {
+        display: block;
+    }
     .container {
         width: 100%;
         padding: 0 30px;
@@ -148,6 +151,9 @@
     }
     .footer_dropdown {
         display: none;
+    }
+    .footer_dropdown.slide {
+        display: block;
     }
     .firstMenu {
         display: flex;

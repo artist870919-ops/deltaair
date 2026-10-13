@@ -2,10 +2,12 @@
 #header {
     width: 100%;
     background-color: #001932;
+    box-shadow: 0 5px 5px #001932a2;
     position: fixed;
-    left: center;
+    left: 0;
     top: 0;
     z-index: 1000;
+    transition: all 0.5s;
 }
 #banner_bg {
     padding-top: 63px;
@@ -24,6 +26,59 @@
     margin: 0 auto;
     /* background-color: #ffffff73; */
 }
+/* 헤더 스클롤 다운  */
+#header.active {
+    background-color: #001932a2;
+    backdrop-filter: blur(10px);
+}
+/* #header.active.ul.gnb li a {color: #999;} */
+
+/* 모바일 네비 시작 */
+#mNav {
+    display: none;
+}
+#mNav button {
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+}
+#mNav button .fa-chart-bar {
+    color: #fff;
+    font-size: 16px;
+}
+#mNav nav {
+    position: fixed;
+    left: 0;
+    top: 63px;
+    z-index: 999;
+
+    background-color: #001932a2;
+    width: 35%;
+
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    transition: transform 0.5s cubic-bezier(0.78, -0.01, 0.23, 1);
+}
+#mNav nav.show {
+    transform: translateX(0);
+}
+#mNav nav ul {
+    padding: 10%;
+    border-bottom: 1px solid #f4f5f7;
+}
+#mNav nav ul:last-child {
+    border: 0;
+}
+#mNav nav ul li {
+    margin-bottom: 10px;
+}
+#mNav nav ul li a {
+    color: #fff;
+}
+
+/* 모바일 네비 끝 */
 
 /* header */
 .header_inner {
